@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Barlow', 'Fraunces';
+    margin: 0;
+    width: 100%;
+    font-weight: 900;
+}
+
+header {
+    display: flex;
+}
+
+.desktop {
+    display: none;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.h-text {
+    position: absolute;
+    color: white;
+    top: 9rem;
+    left: 0;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.h-image {
+    position: absolute;
+    color: white;
+}
+
+.logo {
+    top: 5%;
+    left: 10%;
+}
+
+.arrow {
+    top: 18rem;
+    left: 45%
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.b-images {
+    width: 100%;
+}
+
+.left-content {
+    color: hsl(198, 62%, 26%);
+}
+
+.right-content {
+    color: hsl(167, 40%, 24%);
+    display: flex;
+}
+
+.text {
+    color: hsl(213, 9%, 39%);
+}
+
+.text h2 {
+    color: hsl(212, 27%, 19%);
+}
+
+.text .learn1 {
+    text-decoration-line: underline;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+}
+
+.learn {
+    text-decoration-line: underline;
+    text-decoration-color: hsl(7, 99%, 70%);
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+}
+
+.learn::after {
+    content: '';
+    color: hsl(51, 100%, 49%);
+}
+
+.profile {
+    border-radius: 50%;
+    align-items: center;
+    transform: scale(.6);
+
+}
+
+.person {
+    display: contents;
+}
+
+.emily img {
+    align-self: center;
+}
+
+.thomas img {
+    align-self: center;
+}
+
+.jennie img {
+    align-self: center;
+}
+
+h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.testimonials p {
+    margin: 1.5rem 0;
+}
+
+.testimonials h3 {
+    color: hsl(210, 4%, 67%);
+}
+
+.row3 {
+    position: relative;
+    width: 100%;
+}
+
+.test-text {
+    color: hsl(213, 9%, 39%);
+}
+
+.client-name {
+    color: hsl(212, 27%, 19%);
+}
+
+.position {
+    color: hsl(210, 4%, 67%);
+}
+
+.top-text {
+    position: absolute;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.text1 {
+    top: 30%;
+}
+
+.text2 {
+    top: 80%;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.row-text {
+    min-height: 312px;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem;
+
+
+}
+
+.bottom-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom-images img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    background: hsl(168, 34%, 41%);
+    display: grid;
+    height: 55vh;
+    position: relative;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+}
+
+.footer-image {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+
+.media-links {
+    padding: 1.5em;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-image: url(images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        height: 40rem;
+        background-position: center;
+    }
+
+    .h-image {
+        z-index: 1;
+    }
+
+    .arrow {
+        top: 18rem;
+        left: 48%;
+    }
+
+    .logo {
+        left: 3%;
+    }
+
+    .h-text {
+        top: 24%;
+        left: 24%;
+        font-weight: 900;
+        font-size: 3rem;
+        font-size: clamp(3rem, 6vw, 4.5rem);
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 65%;
+        top: 1%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .text {
+        text-align: initial;
+        display: flex;
+        flex-flow: wrap;
+        padding: 7rem;
+    }
+
+    .row1,
+    .row2,
+    .row3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .row-text {
+        min-height: 428px;
+        position: relative;
+    }
+
+    .row-text h2 {
+        font-size: clamp(2rem, 3vw, 2.5rem);
+    }
+
+    .row-text p {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+
+    }
+
+
+    .transform {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .b-images {
+        visibility: collapse;
+    }
+
+    .egg {
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        background: url(images/desktop/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cup {
+        background: url(images/desktop/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .image {
+        background-position: center;
+    }
+
+    .right-content,
+    .left-content {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-width: 384px;
+        max-height: 614px;
+        display: flex;
+    }
+
+    .left-content {
+        background-image: url(images/desktop/image-photography.jpg);
+    }
+
+    .right-content {
+        background-image: url(images/desktop/image-graphic-design.jpg);
+    }
+
+    .top-text {
+        top: 50%;
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        padding: 6rem;
+    }
+
+    .top-text h2 {
+        margin: auto;
+    }
+
+    .grap-image,
+    .orange-image {
+        display: grid;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        margin: 0 4rem;
+    }
+
+    .testimonials h3 {
+        grid-column: 2;
+        align-self: center;
+    }
+
+    .emily img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .thomas img {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .jennie img {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .emily .test-text {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .thomas .test-text {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .jennie .test-text {
+        grid-row: 3;
+        grid-column: 3;
+    }
+
+    .test-text {
+        text-align: initial;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* .test-text::before {
+        content: '';
+        padding: 2rem;
+    } */
+
+    .testimonials p {
+        font-size: .9rem;
+    }
+
+    .profile {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .position::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+
+    .bottom-images {
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .b-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+
+
+    .milk {
+        background: url(images/desktop/image-gallery-milkbottles.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 33.3%; */
+        /* min-height: 894px; */
+    }
+
+    .orange-2 {
+        background: url(images/desktop/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 33.3%; */
+        /* min-height: 894px; */
+    }
+
+    .cone {
+        background: url(images/desktop/image-gallery-cone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 33.3%; */
+        /* min-height: 894px; */
+    }
+
+    .sugar {
+        background: url(images/desktop/image-gallery-sugarcubes.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 33.3%; */
+        /* min-height: 894px; */
+    }
+}
